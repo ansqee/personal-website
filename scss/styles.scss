@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:400,600,800");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap");
 
 @import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&display=swap");
 
@@ -36,10 +36,10 @@ h1 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
     color: #eb314a;
-    margin: 112px 44px 112px 44px;
+    margin: 112px 44px 124px 44px;
 }
 
-img {
+.profpic {
     max-width: 200px;
     height: auto;
     border-radius: 50%;
@@ -56,6 +56,16 @@ img {
         color: #eb314a;
         font-size: 32px;
         margin: 0px 0px 12px 0px;
+        text-shadow: 2px 2px #ffcdd4;
+    }
+    &-medium {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        color: #eb314a;
+        font-size: 24px;
+        margin: 0px 0px 24px 0px;
+        text-shadow: 2px 2px #ffcdd4;
+        text-align: center;
     }
     &-small {
         font-family: 'Balsamiq Sans', cursive;
@@ -70,7 +80,7 @@ img {
 .card {
     background-color: #f8f8f8;
     padding: 32px;
-    margin: 44px 88px 44px 88px;
+    margin: 32px 88px 32px 88px;
     border-radius: 35px;
     box-shadow: 5px 5px #f58e9c;
     border: solid;
@@ -101,23 +111,22 @@ img {
     margin: 0px 0px 0px 24px;
 }
 
-@media only screen and (max-width: 1125px) {
+.icon {
+    margin-right: 16px;
+    margin-left: 16px;
+    max-height: 50px;
+    width: auto;
+}
+
+@media only screen and (max-width: 1180px) {
     h1 {
-        font-size: 50px;
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 800;
-        color: #eb314a;
+        font-size: 20vw;
         margin: 112px 15px 112px 15px;
     }
 
-    img {
+    .profpic {
         max-width: 150px;
         height: auto;
-        border-radius: 50%;
-        box-shadow: 3px 3px #f58e9c;
-        border: solid;
-        border-width: 2px;
-        border-color: #f58e9c;
     }
     
     .desc-text {
@@ -125,16 +134,20 @@ img {
             font-size: 18px;
             margin: 0px 0px 12px 0px;
         }
+        &-medium {
+            font-size: 16px;
+            margin: 0px 0px 12px 0px;
+        }
         &-small {
             font-size: 12px;
-            margin: 0px 0px 0px 0px;
+            margin: 0px;
             line-height: 1.5;
         }
     }
 
     .card {
         padding: 16px 8px 16px 8px;
-        margin: 44px 15px 44px 15px;
+        margin: 20px 15px 20px 15px;
         border-radius: 35px;
         display: flex;
         flex-direction: column;
@@ -151,5 +164,12 @@ img {
         display: inline-block;
         margin: 0px 24px 0px 24px;
         text-align: center;
+    }
+
+    .icon {
+        margin-right: 8px;
+        margin-left: 8px;
+        max-height: 25px;
+        width: auto;
     }
 }
