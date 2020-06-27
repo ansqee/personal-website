@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap");
+
+.logo {
+    cursor: pointer;
+    max-width: 30px;
+}
+
+.navspace {
+    z-index: 2;
+    background-color: #f58e9c;
+    overflow: hidden;
+    padding: 8px 88px 8px 88px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+@media only screen and (max-width: 750px) {
+    .logo {
+        max-width: 20px;
+    }
+    .navspace {
+        padding: 6px 15px 6px 15px;
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+}

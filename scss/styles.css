@@ -23,8 +23,14 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  background-color: #ffb3bd;
+  background-image: url("../static/bg.png");
+  background-repeat: repeat;
+  margin: 0;
 }
 
 h1 {
@@ -33,7 +39,7 @@ h1 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 800;
   color: #eb314a;
-  margin: 112px 44px 124px 44px;
+  margin: 170px 44px 140px 44px;
 }
 
 .profpic {
@@ -47,9 +53,21 @@ h1 {
   border-color: #f58e9c;
 }
 
+.pic {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+}
+
+.desc {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0px 0px 0px 24px;
+}
+
 .desc-text-big {
   font-family: 'Montserrat', sans-serif;
-  font-weight: 600;
+  font-weight: 800;
   color: #eb314a;
   font-size: 32px;
   margin: 0px 0px 12px 0px;
@@ -75,7 +93,17 @@ h1 {
   line-height: 1.5;
 }
 
-.card {
+.desc-text-smaller {
+  font-family: 'Balsamiq Sans', cursive;
+  font-weight: 400;
+  color: #f16f81;
+  font-size: 18px;
+  margin: 0px 0px 0px 0px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.card-1 {
   background-color: #f8f8f8;
   padding: 32px;
   margin: 32px 88px 32px 88px;
@@ -85,6 +113,95 @@ h1 {
   border: solid;
   border-width: 2px;
   border-color: #f58e9c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card-2 {
+  background-color: #f8f8f8;
+  padding: 32px;
+  margin: 32px 88px 32px 88px;
+  border-radius: 35px;
+  -webkit-box-shadow: 5px 5px #f58e9c;
+          box-shadow: 5px 5px #f58e9c;
+  border: solid;
+  border-width: 2px;
+  border-color: #f58e9c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card-3 {
+  background-color: #FFB3BD;
+  margin: 0px 6px 16px 6px;
+  padding: 18px 18px 16px 18px;
+  border-radius: 20px;
+  -webkit-box-shadow: 3px 3px #f16f81;
+          box-shadow: 3px 3px #f16f81;
+  border: solid;
+  border-width: 2px;
+  border-color: #f16f81;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.blocks-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.blocks-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  width: 100px;
 }
 
 .playful span {
@@ -100,26 +217,24 @@ h1 {
           animation-delay: 0.3s;
 }
 
-.pic {
-  display: inline-block;
-  position: relative;
-  vertical-align: middle;
+.icon-skill {
+  max-height: 75px;
+  margin: 0px 0px 12px 0px;
 }
 
-.desc {
-  display: inline-block;
-  vertical-align: middle;
-  margin: 0px 0px 0px 24px;
-}
-
-.icon {
+.icon-contact {
   margin-right: 16px;
   margin-left: 16px;
-  max-height: 50px;
+  max-height: 40px;
   width: auto;
 }
 
-@media only screen and (max-width: 1180px) {
+@media only screen and (max-width: 750px) {
+  body {
+    background-image: url("../static/bg2.png");
+    background-repeat: repeat;
+    margin: 0;
+  }
   h1 {
     font-size: 20vw;
     margin: 112px 15px 112px 15px;
@@ -128,23 +243,58 @@ h1 {
     max-width: 150px;
     height: auto;
   }
+  .pic {
+    position: relative;
+    margin: 0px 0px 24px 0px;
+  }
+  .desc {
+    display: inline-block;
+    margin: 0px 24px 0px 24px;
+    text-align: center;
+  }
   .desc-text-big {
     font-size: 18px;
     margin: 0px 0px 12px 0px;
   }
   .desc-text-medium {
     font-size: 16px;
-    margin: 0px 0px 12px 0px;
+    margin: 0px 0px 16px 0px;
   }
   .desc-text-small {
     font-size: 12px;
     margin: 0px;
     line-height: 1.5;
   }
+  .desc-text-smaller {
+    font-size: 12px;
+  }
   .card {
-    padding: 16px 8px 16px 8px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .card-1 {
+    padding: 24px 8px 24px 8px;
     margin: 20px 15px 20px 15px;
-    border-radius: 35px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .card-2 {
+    padding: 24px 8px 24px 8px;
+    margin: 20px 15px 20px 15px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -155,20 +305,47 @@ h1 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
-  .pic {
-    position: relative;
-    margin: 24px 0px 24px 0px;
+  .card-3 {
+    margin: 0px 3px 12px 3px;
+    padding: 14px 8px 12px 8px;
+    border-radius: 15px;
   }
-  .desc {
-    display: inline-block;
-    margin: 0px 24px 0px 24px;
-    text-align: center;
+  .blocks-1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
   }
-  .icon {
+  .blocks-2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    width: 60px;
+  }
+  .icon-skill {
+    max-height: 40px;
+  }
+  .icon-contact {
     margin-right: 8px;
     margin-left: 8px;
     max-height: 25px;

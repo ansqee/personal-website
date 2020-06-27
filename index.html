@@ -5,11 +5,20 @@
         <title>ansqee's page</title>
         <link rel="stylesheet" href="scss/styles.css">
         <link rel="icon" href="static/icon.png">
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
 
     <body>
+        <div id="nav-placeholder"></div>
+        
+        <script>
+            $(function(){
+                $("#nav-placeholder").load("_navbar.html");
+            });
+        </script>
 
         <h1 class="playful" aria-label="ansqee">
             <span aria-hidden="true">a</span><span
@@ -20,34 +29,77 @@
             aria-hidden="true">e</span>
         </h1>
 
-        <div class="card">
+        <div id="about" class="card-1">
             <div class="pic">
                 <img class="profpic" src="static/myself.png" alt="This is me!">
             </div>
             <div class="desc">
                 <p class="desc-text-big">Hi! I'm Ansqee!</p>
                 <div class="desc-text-small">
-                    I'm a Computer Science major studying at Universitas Indonesia.<br>
-                    I'm currently learning UI/UX, Web Development, Data Structure, and drawing things.<br>
-                    I enjoy discovering new things every day!
+                    I'm a Computer Science major studying at Universitas Indonesia. 
+                    Currently, I'm learning UI/UX Design, Web Development, and Data Structure. 
+                    Drawing cute things is what I do in my free time.
+                    Nice to meet you!
                 </div>
             </div>
         </div>
 
-        <div class="card">
+        <div id="skills" class="card-2">
+            <p class="desc-text-medium">Skills</p>
+            <div class="blocks-1">
+                <div class="card-3">
+                    <div class="blocks-2">
+                        <img class="icon-skill" src="static/skill-logos/py.svg">
+                        <p class="desc-text-smaller">Python</p>
+                    </div>
+                    <div class="blocks-2">
+                        <img class="icon-skill" src="static/skill-logos/java.svg">
+                        <p class="desc-text-smaller">Java</p>
+                    </div>
+                    <div class="blocks-2">
+                        <img class="icon-skill" src="static/skill-logos/html.svg">
+                        <p class="desc-text-smaller">HTML</p>
+                    </div>
+                    <div class="blocks-2">
+                        <img class="icon-skill" src="static/skill-logos/css.svg">
+                        <p class="desc-text-smaller">CSS</p>
+                    </div>
+                </div>
+                <div class="card-3">
+                    <div class="blocks-2">
+                        <img class="icon-skill" src="static/skill-logos/figma.svg">
+                        <p class="desc-text-smaller">Figma</p>
+                    </div>
+                    <div class="blocks-2">
+                        <img class="icon-skill" src="static/skill-logos/ai.svg">
+                        <p class="desc-text-smaller">Illust.</p>
+                    </div>
+                    <div class="blocks-2">
+                        <img class="icon-skill" src="static/skill-logos/ps.svg">
+                        <p class="desc-text-smaller">Photosh.</p>
+                    </div>
+                    <div class="blocks-2">
+                        <img class="icon-skill" src="static/skill-logos/procreate.svg">
+                        <p class="desc-text-smaller">Procreate</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="find-me" class="card-2">
             <p class="desc-text-medium">Find me anywhere</p>
             <div style="text-align: center">
                 <a href="https://www.linkedin.com/in/hasiana-emanuela-rajagukguk-1604291a2/" target="_blank" style="text-decoration:none">
-                    <img class="icon" src="static/linkedin.svg" alt="linkedin">
+                    <img class="icon-contact" src="static/linkedin.svg" alt="linkedin">
                 </a>
                 <a href="https://github.com/ansqee" target="_blank" style="text-decoration:none">
-                    <img class="icon" src="static/github.svg" alt="github">
+                    <img class="icon-contact" src="static/github.svg" alt="github">
                 </a>
                 <a href="https://gitlab.com/ansqee" target="_blank" style="text-decoration:none">
-                    <img class="icon" src="static/gitlab.svg" alt="gitlab">
+                    <img class="icon-contact" src="static/gitlab.svg" alt="gitlab">
                 </a>
                 <a href="https://www.instagram.com/anaemnl/" target="_blank" style="text-decoration:none">
-                    <img class="icon" src="static/ig.svg" alt="ig">
+                    <img class="icon-contact" src="static/ig.svg" alt="ig">
                 </a>
             </div>
         </div>
