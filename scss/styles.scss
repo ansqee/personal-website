@@ -96,6 +96,14 @@ h1 {
         margin: 0px 0px 24px 0px;
         text-align: center;
     }
+    &-medium3 {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        color: #eb314a;
+        font-size: 18px;
+        margin: 0px 0px 12px 0px;
+        text-align: center;
+    }
     &-small {
         font-family: 'Balsamiq Sans', cursive;
         font-weight: 400;
@@ -111,6 +119,15 @@ h1 {
         font-size: 18px;
         margin: 0px 0px 0px 0px;
         line-height: 1.5;
+        text-align: center;
+    }
+    &-smallerer {
+        font-family: 'Balsamiq Sans', cursive;
+        font-weight: 400;
+        color: #f16f81;
+        font-size: 16px;
+        margin: 0px 0px 0px 0px;
+        line-height: 1;
         text-align: center;
     }
 }
@@ -160,6 +177,20 @@ h1 {
         flex-flow: row nowrap;
         align-items: stretch;
     }
+    &-4 {
+        background-color: #FFB3BD;
+        margin: 0px 12px 16px 12px;
+        padding: 18px 18px 16px 18px;
+        border-radius: 20px;
+        box-shadow: 3px 3px #f16f81;
+        border: solid;
+        border-width: 2px;
+        border-color: #f16f81;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: stretch;
+        width: 150px;
+    }
 }
 
 .blocks {
@@ -184,8 +215,9 @@ h1 {
     }
     &-4 {
         display: flex;
-        flex-flow: row nowrap;
+        flex-flow: row wrap;
         align-items: stretch;
+        justify-content: center;
     }
 }
 
@@ -254,6 +286,10 @@ h1 {
             font-size: 12px;
             margin: 0px 0px 12px 0px;
         }
+        &-medium3 {
+            font-size: 12px;
+            margin: 0px 0px 6px 0px;
+        }
         &-small {
             font-size: 12px;
             margin: 0px;
@@ -261,6 +297,9 @@ h1 {
         }
         &-smaller {
             font-size: 12px;;
+        }
+        &-smallerer {
+            font-size: 10px;
         }
     }
 
@@ -291,6 +330,12 @@ h1 {
             margin: 0px 3px 12px 3px;
             padding: 14px 8px 12px 8px;
             border-radius: 15px;
+        }
+        &-4 {
+            margin: 0px 3px 12px 3px;
+            padding: 14px 12px 12px 12px;
+            border-radius: 15px;
+            width: 100px;
         }
     }
 
